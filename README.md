@@ -1,8 +1,7 @@
 # SproutGigs Telegram Bot
 
 ## Project Overview
-This project is a SproutGigs Telegram bot built using Node.js and the `node-telegram-bot-api` library. The bot is designed to interact with users and handle various commands related to gigs and micro jobs.
-
+This project is a SproutGigs Telegram bot built using Node.js and the `node-telegram-bot-api` library. cl
 ## Key Components:
 
 1. **Main Entry Point**:

@@ -17,7 +17,6 @@ async function handleCallbackQuery(bot, callbackQuery,userStates) {
       await showGigsPage(bot, chatId, newPage);
     } else if (data.startsWith('rankingPage_')) {
       const newPage = parseInt(data.split('_')[1]);
-      console.log('Navigating to page:', newPage); // Debugging output
       userStates.set(chatId, { currentPage: newPage });
       await sendRankingPage(bot, chatId, newPage);
     } else if (data.startsWith('microJobsRankingPage_')) {
@@ -30,7 +29,6 @@ async function handleCallbackQuery(bot, callbackQuery,userStates) {
       await showStaticJobsPage(bot, chatId, page, staticJobs);
     } else if (data.startsWith('rankingPage_')) {
       const newPage = parseInt(data.split('_')[1]);
-      console.log('Navigating to page:', newPage); // Debugging output
       userStates.set(chatId, { currentPage: newPage });
       await sendRankingPage(bot, chatId, newPage);
     } else if (data === 'main_menu') {

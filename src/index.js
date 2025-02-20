@@ -8,6 +8,7 @@ const userStates = new Map();
 // Create a bot that uses 'polling' to fetch new updates
 const bot = new TelegramBot(TOKEN, { polling: true });
 
+
 // Initialize command handlers
 commandHandlers.init(bot, userStates);
 
