@@ -23,7 +23,7 @@ jobs:
 
       - name: Run the bot
         env:
-          TOKEN: ${{ secrets.TOKEN }}
+          TOKEN: ${{ secrets.BOT_TOKEN }}
           USER_ID: ${{ secrets.USER_ID }}
           API_SECRET: ${{ secrets.API_SECRET }}
         run: node src/index.js
