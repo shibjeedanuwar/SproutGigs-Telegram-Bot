@@ -4,7 +4,11 @@ const commandHandlers = require('./commands/handlers');
 const  handleCallbackQuery  = require('./commands/handleCallbackQuery');
 
 const userStates = new Map();
-
+const token = process.env.TOKEN;
+if (!token) {
+  console.error("Telegram Bot Token not provided!");
+  process.exit(1);
+}
 // Create a bot that uses 'polling' to fetch new updates
 const bot = new TelegramBot(config.TOKEN, { polling: true });
 
