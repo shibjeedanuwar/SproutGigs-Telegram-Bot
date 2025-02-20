@@ -10,7 +10,7 @@ if (!token) {
   process.exit(1);
 }
 // Create a bot that uses 'polling' to fetch new updates
-const bot = new TelegramBot(config.TOKEN, { polling: true });
+const bot = new TelegramBot(token, { polling: true });
 
 // Initialize command handlers
 commandHandlers.init(bot, userStates);
