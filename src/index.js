@@ -1,7 +1,7 @@
 const TelegramBot = require('node-telegram-bot-api');
 const config = require('./config/config');
 const commandHandlers = require('./commands/handlers');
-const  handleCallbackQuery  = require('./commands/handleCallbackQuery');
+const  { handleCallbackQuery }  = require('./commands/handleCallbackQuery');
 
 const userStates = new Map();
 const token = process.env.TOKEN;
