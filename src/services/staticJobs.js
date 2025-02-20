@@ -1,4 +1,4 @@
-export const staticJobs = {
+ const staticJobs = {
   "jobs":[
 {
     "id": "4fd28b6687333b4f8ecea47c",
@@ -1001,7 +1001,11 @@ export const staticJobs = {
     ]
   }
 ]
-     }
+     };
+     module.exports = { staticJobs };
 
+function getStaticJobs() {
+  return staticJobs;
+}
 
-export const getStaticJobs = () => staticJobs;
+module.exports.getStaticJobs = getStaticJobs;

@@ -2,7 +2,7 @@
 const { getStaticJobs } = require('../services/staticJobs');
 const { showGigsPage } = require('./browseGigs');
 const { showStaticJobsPage } = require('./gigs');
-const { sendRankingPage }  = require('./microJobsRanking');
+const { sendRankingPage } = require('./microJobsRanking');
 
 //call back handeler function.
 async function handleCallbackQuery(bot, callbackQuery,userStates) {
