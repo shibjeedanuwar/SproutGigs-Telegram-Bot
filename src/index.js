@@ -17,25 +17,6 @@ commandHandlers.init(bot, userStates);
 
 // Update callback query handler
 bot.on('callback_query', async (callbackQuery) => {
-  console.log('Received callback query:', callbackQuery);
   handleCallbackQuery(bot, callbackQuery, userStates);
 });
 
-// Add logging for command execution
-bot.onText(/\/start/, (msg) => {
-  console.log('Received /start command from user:', msg.from.id);
-  // Handle start command
-});
-
-// Graceful shutdown
-process.on('SIGINT', () => {
-  console.log('Shutting down the bot gracefully...');
-  bot.stopPolling();
-  process.exit(0);
-});
-
-process.on('uncaughtException', (error) => {
-  console.error('An uncaught exception occurred:', error);
-  bot.stopPolling();
-  process.exit(1);
-});
