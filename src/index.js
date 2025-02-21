@@ -4,7 +4,7 @@ const commandHandlers = require('./commands/handlers');
 const { handleCallbackQuery } = require('./commands/handleCallbackQuery');
 
 const userStates = new Map();
-const token = config.BOT_TOKEN;
+const token = config.TOKEN;
 if (!token) {
   console.error("Telegram Bot Token not provided!");
   process.exit(1);
