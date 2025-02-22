@@ -1,7 +1,7 @@
 const TelegramBot = require('node-telegram-bot-api');
-const config = require('./config/config');
-const commandHandlers = require('./commands/handlers');
-const { handleCallbackQuery } = require('./commands/handleCallbackQuery');
+const config = require('./src/config/config');
+const commandHandlers = require('./src/commands/handlers');
+const { handleCallbackQuery } = require('./src/commands/handleCallbackQuery');
 const express = require('express');
 const app = express();
 const PORT = 8080;
