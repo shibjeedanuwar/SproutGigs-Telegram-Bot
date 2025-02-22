@@ -4,8 +4,8 @@ const TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const userId = process.env.USER_ID;
 const api_secret = process.env.API_SECRET;
 
-// Error handling for missing environment variables
-if (!TOKEN || !userId || !api_secret) {
+// Error handling for missing environment variables || !userId || !api_secret
+if (!TOKEN ) {
   console.error("Missing required environment variables!");
   process.exit(1);
 }
