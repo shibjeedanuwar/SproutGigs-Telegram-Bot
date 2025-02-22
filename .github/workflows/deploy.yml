@@ -1,9 +1,9 @@
 name: Deploy SproutGigs Telegram Bot
 
-# on:
-#   push:
-#     branches:
-#       - main  # Change this to your default branch
+on:
+  push:
+    branches:
+      - main  # Change this to your default branch
 
 jobs:
   deploy:
