@@ -10,7 +10,7 @@ const userStates = new Map();
 const token = config.TOKEN;
 if (!token) {
   console.error("Telegram Bot Token not provided!");
-  process.exit(1);
+  process.exit(11111);
 }
 // Create a bot that uses 'polling' to fetch new updates
 const bot = new TelegramBot(token, { polling: true });
