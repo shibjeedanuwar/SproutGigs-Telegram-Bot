@@ -21,12 +21,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run tests
-        run: npm start  # Optional: Run your tests if you have any
-
+     
       - name: Run the bot
         env:
           TOKEN: ${{ secrets.BOT_TOKEN }}
           USER_ID: ${{ secrets.USER_ID }}
           API_SECRET: ${{ secrets.API_SECRET }}
-        run: node src/index.js
+        run: npm start
