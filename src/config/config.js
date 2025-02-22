@@ -1,6 +1,6 @@
 require('dotenv').config();
 
-const TOKEN = process.env.TELEGRAM_BOT_TOKEN;
+const TOKEN = process.env.TOKEN;
 const userId = process.env.USER_ID;
 const api_secret = process.env.API_SECRET;
 
