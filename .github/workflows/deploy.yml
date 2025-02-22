@@ -24,7 +24,7 @@ jobs:
      
       - name: Run the bot
         env:
-          TOKEN: ${{ secrets.BOT_TOKEN }}
+          TOKEN: ${{ secrets.TELEGRAM_BOT_TOKENT }}
           USER_ID: ${{ secrets.USER_ID }}
           API_SECRET: ${{ secrets.API_SECRET }}
         run: npm start
