@@ -4,7 +4,7 @@ const commandHandlers = require('./src/commands/handlers');
 const { handleCallbackQuery } = require('./src/commands/handleCallbackQuery');
 const express = require('express');
 const app = express();
-const PORT = 8080;
+// const PORT = 8080;
 
 const userStates = new Map();
 
@@ -25,6 +25,6 @@ bot.on('callback_query', async (callbackQuery) => {
 });
 
 //listen express server.
-app.listen(PORT, () => {
-  console.log(`Server http://localhost:${PORT} running`);
-});
+// app.listen(PORT, () => {
+//   console.log(`Server http://localhost:${PORT} running`);
+// });
